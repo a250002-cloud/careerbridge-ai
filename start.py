@@ -26,7 +26,9 @@ if __name__ == "__main__":
 
     # 2. Hand off to gunicorn
     port = os.environ.get("PORT", "5000")
-    workers = os.environ.get("WEB_CONCURRENCY", "2")
+    # Keep the default small for Railway's memory-limited instances. Increase
+    # WEB_CONCURRENCY only after checking the service's memory under load.
+    workers = os.environ.get("WEB_CONCURRENCY", "1")
     run([
         python, "-m", "gunicorn",
         "app:create_app('production')",
