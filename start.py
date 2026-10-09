@@ -19,15 +19,16 @@ def run(cmd: list[str]):
 if __name__ == "__main__":
     os.environ["FLASK_APP"] = "app.py"
     os.environ["FLASK_ENV"] = "production"
+    python = sys.executable
 
     # 1. Create all tables & seed KB data
-    run(["flask", "seed-db"])
+    run([python, "-m", "flask", "seed-db"])
 
     # 2. Hand off to gunicorn
     port = os.environ.get("PORT", "5000")
     workers = os.environ.get("WEB_CONCURRENCY", "2")
     run([
-        "gunicorn",
+        python, "-m", "gunicorn",
         "app:create_app('production')",
         "--bind", f"0.0.0.0:{port}",
         "--workers", workers,
