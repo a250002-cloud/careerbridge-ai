@@ -1,0 +1,16 @@
+[phases.setup]
+# Python 3.11 + system libs required by spaCy, PyMuPDF, PyMySQL
+nixPkgs = ["python311", "python311Packages.pip", "gcc", "libffi", "openssl", "libxml2", "libxslt", "zlib"]
+
+[phases.install]
+cmds = [
+  "pip install --upgrade pip setuptools wheel",
+  "pip install -r requirements.txt"
+]
+
+[phases.build]
+# No compile step needed for a Flask app
+cmds = []
+
+[start]
+cmd = "python start.py"

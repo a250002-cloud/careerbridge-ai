@@ -1,0 +1,27 @@
+skill_id,prerequisite_skill_id,est_effort_hours,suggested_practice
+9,1,10,Build a simple Python script before learning Flask
+10,1,15,Complete Python OOP modules before Django
+11,1,10,Build Python functions and classes before FastAPI
+12,2,15,Learn Java OOP thoroughly before Spring Boot
+13,3,20,Master JavaScript fundamentals before React
+14,4,20,Learn TypeScript before Angular
+15,3,15,Learn JavaScript before Vue.js
+19,5,15,Practice SQL queries before REST API design
+20,1,10,Learn basic Linux commands before Docker
+23,1,20,Learn Python and statistics before ML
+24,23,30,Complete ML fundamentals before Deep Learning
+25,5,10,Learn SQL before data analysis
+26,1,10,Learn Python before Pandas
+27,1,10,Learn Python before NumPy
+28,23,20,Understand ML concepts before scikit-learn
+29,24,25,Learn Deep Learning concepts before TensorFlow
+30,24,25,Understand neural networks before PyTorch
+33,23,20,Learn ML before NLP
+34,1,15,Learn Python before pytest
+35,3,15,Learn JavaScript/HTML before Selenium
+36,20,15,Learn Docker before CI/CD
+43,19,10,Learn REST APIs before authentication
+44,20,15,Learn Docker before cloud deployment
+46,45,20,Learn OOP before data structures
+47,46,20,Learn data structures before problem solving
+50,5,20,Master SQL before database design

@@ -1,0 +1,34 @@
+services:
+  - type: web
+    name: careerbridge-ai
+    runtime: python
+    buildCommand: |
+      pip install -r requirements.txt
+      python -m spacy download en_core_web_sm
+    startCommand: gunicorn "app:create_app('production')" --bind 0.0.0.0:$PORT --workers 2 --timeout 120
+    envVars:
+      - key: FLASK_ENV
+        value: production
+      - key: SECRET_KEY
+        generateValue: true
+      - key: DATABASE_URL
+        fromDatabase:
+          name: careerbridge-db
+          property: connectionString
+      - key: LLM_PROVIDER
+        value: stub
+      - key: LLM_API_KEY
+        sync: false          # set manually in Render dashboard
+      - key: UPLOAD_FOLDER
+        value: /tmp/uploads
+      - key: GENERATED_FOLDER
+        value: /tmp/generated_resumes
+    disk:
+      name: careerbridge-uploads
+      mountPath: /tmp/uploads
+      sizeGB: 1
+
+databases:
+  - name: careerbridge-db
+    databaseName: careerbridge
+    plan: free

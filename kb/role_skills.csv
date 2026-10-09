@@ -1,0 +1,113 @@
+role_id,skill_id,importance,weight,evidence_hint
+1,1,core,3.0,Python used in projects or experience
+1,9,core,2.5,Flask API built or mentioned
+1,19,core,2.0,REST API design knowledge
+1,5,core,2.0,SQL database usage
+1,21,core,1.5,Git version control
+1,34,core,2.0,Testing with pytest
+1,44,recommended,1.5,Deployment skills
+1,10,recommended,1.5,Django framework knowledge
+1,11,recommended,1.5,FastAPI knowledge
+1,20,recommended,1.5,Docker containerization
+1,45,recommended,1.5,OOP principles
+1,6,recommended,1.0,MySQL database
+1,42,optional,1.0,Redis caching
+1,36,optional,1.0,CI/CD pipelines
+2,2,core,3.0,Java used in projects or experience
+2,12,core,2.5,Spring Boot framework
+2,5,core,2.0,SQL database usage
+2,19,core,2.0,REST API design
+2,21,core,1.5,Git version control
+2,34,core,2.0,Unit testing with JUnit
+2,45,core,2.0,OOP principles
+2,46,recommended,1.5,Data structures and algorithms
+2,36,recommended,1.5,CI/CD pipelines
+2,20,recommended,1.5,Docker containerization
+2,44,recommended,1.5,Deployment skills
+3,19,core,3.0,REST API design and implementation
+3,5,core,2.5,SQL database proficiency
+3,21,core,2.0,Git version control
+3,43,core,2.0,Authentication implementation
+3,34,core,2.0,Unit testing
+3,20,core,2.0,Docker containerization
+3,44,recommended,1.5,Deployment experience
+3,1,recommended,1.5,Python backend skills
+3,2,recommended,1.5,Java backend skills
+3,50,recommended,1.5,Database design
+3,36,recommended,1.0,CI/CD knowledge
+3,42,optional,1.0,Redis caching
+3,39,optional,1.0,Kubernetes
+4,16,core,3.0,HTML5 proficiency
+4,17,core,3.0,CSS3 proficiency
+4,3,core,3.0,JavaScript skills
+4,13,core,2.5,React framework
+4,21,core,1.5,Git version control
+4,18,recommended,1.5,Bootstrap CSS framework
+4,4,recommended,1.5,TypeScript
+4,14,recommended,1.0,Angular framework
+4,15,recommended,1.0,Vue.js framework
+4,19,recommended,1.5,REST API consumption
+4,40,optional,1.0,Node.js
+5,19,core,3.0,Full stack REST API
+5,3,core,2.5,JavaScript proficiency
+5,5,core,2.0,SQL database
+5,13,core,2.0,React or similar framework
+5,21,core,1.5,Git version control
+5,16,core,1.5,HTML/CSS
+5,17,core,1.5,CSS proficiency
+5,43,recommended,2.0,Authentication
+5,1,recommended,1.5,Python backend
+5,20,recommended,1.5,Docker
+5,44,recommended,1.5,Deployment
+5,40,recommended,1.5,Node.js
+5,36,optional,1.0,CI/CD
+6,5,core,3.0,SQL proficiency
+6,25,core,3.0,Data analysis skills
+6,26,core,2.5,Pandas library
+6,31,core,2.5,Data visualization
+6,32,core,2.0,Statistics knowledge
+6,27,recommended,1.5,NumPy
+6,1,recommended,1.5,Python for analysis
+6,21,recommended,1.0,Git version control
+6,50,recommended,1.5,Database design
+6,37,optional,1.0,Cloud platforms
+7,23,core,3.0,ML algorithms and application
+7,32,core,2.5,Statistics and probability
+7,28,core,2.5,scikit-learn
+7,26,core,2.0,Pandas
+7,1,core,2.0,Python
+7,27,recommended,1.5,NumPy
+7,25,recommended,1.5,Data analysis
+7,31,recommended,1.5,Data visualization
+7,29,recommended,1.5,TensorFlow/Keras
+7,33,recommended,1.5,NLP
+7,21,recommended,1.0,Git
+8,23,core,3.0,Machine learning models
+8,28,core,2.5,scikit-learn
+8,1,core,2.5,Python
+8,29,core,2.0,TensorFlow
+8,19,core,2.0,API design for model serving
+8,20,core,2.0,Docker
+8,32,recommended,1.5,Statistics
+8,30,recommended,1.5,PyTorch
+8,44,recommended,1.5,Model deployment
+8,36,recommended,1.5,CI/CD for ML
+8,39,optional,1.0,Kubernetes
+9,34,core,3.0,Unit and integration testing
+9,35,core,2.5,Selenium for UI testing
+9,21,core,1.5,Git version control
+9,36,core,2.0,CI/CD pipelines
+9,19,recommended,2.0,API testing
+9,48,recommended,1.5,Agile methodology
+9,1,recommended,1.0,Python for test automation
+9,3,recommended,1.0,JavaScript for testing
+9,47,optional,1.0,Problem solving
+10,5,core,3.0,Advanced SQL
+10,50,core,3.0,Database schema design
+10,6,core,2.0,MySQL proficiency
+10,7,core,2.0,PostgreSQL
+10,21,recommended,1.5,Git version control
+10,1,recommended,1.5,Python for automation
+10,25,recommended,1.5,Data analysis
+10,42,recommended,1.5,Redis
+10,36,optional,1.0,CI/CD
